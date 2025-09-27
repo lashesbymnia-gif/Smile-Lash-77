@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounia Beauté ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #ffc0cb, #ffb6c1);
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 2.2em;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff69b4;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #ff69b4;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    /* Services & Products */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #ff1493;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    /* Boutons */
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #ff69b4, #ff1493);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #ff1493, #ff69b4);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #ffc0cb, #ffb6c1);
+      padding: 25px;
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mounia Beauté ✨</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="presentation">
+  <h2>Bienvenue chez Mounia Beauté</h2>
+  <p>Blanchiment dentaire, extensions de cils et strass dentaire pour sublimer votre sourire. Produits pros disponibles pour les esthéticiennes.</p>
+</section>
+
+<section id="services">
+  <h2>Nos Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Blanchiment Dentaire</h3>
+      <p>White 30 min : 40€ <br> White 45 min : 55€</p>
+    </div>
+    <div class="card">
+      <h3>Extensions de Cils</h3>
+      <p>Pose complète et entretien pour un regard de rêve.</p>
+    </div>
+    <div class="card">
+      <h3>Strass Dentaire</h3>
+      <p>À partir de 10€, sur devis pour grosses trames.</p>
+    </div>
+  </div>
+</section>
+
+<section id="boutique">
+  <h2>Boutique</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://via.placeholder.com/280x180" alt="Faux cils">
+      <h3>Faux Cils en Soie</h3>
+      <p>Prix : 10€ / paire</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="business" value="ton-email-paypal@example.com">
+        <input type="hidden" name="item_name" value="Faux Cils en Soie">
+        <input type="hidden" name="currency_code" value="EUR">
+        <button type="submit" class="btn">Acheter</button>
+      </form>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/280x180" alt="Gel blanchiment">
+      <h3>Gel Blanchiment (Pro)</h3>
+      <p>Peroxyde & Carbamide</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="business" value="ton-email-paypal@example.com">
+        <input type="hidden" name="item_name" value="Gel Blanchiment">
+        <input type="hidden" name="currency_code" value="EUR">
+        <button type="submit" class="btn">Acheter</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contactez-moi</h2>
+  <p>Email : mounia@example.com</p>
+  <p>Instagram : <a href="https://instagram.com/mouniaoff" target="_blank">@mouniaoff</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mounia Beauté</p>
+</footer>
+
+</body>
+</html>
